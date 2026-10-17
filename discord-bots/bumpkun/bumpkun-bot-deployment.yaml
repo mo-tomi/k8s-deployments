@@ -28,7 +28,7 @@ spec:
                       - oracle
       containers:
         - name: bumpkun
-          image: ghcr.io/mo-tomi/bumpkun.v2@sha256:1a23cc73a1b8417987c241933287e1c208f600e3c0db1aaad0516919f0005f51
+          image: ghcr.io/mo-tomi/bumpkun.v2@sha256:c5aff445165294e29ab150165d0bbe287de0238d2433bc4517ed6d1e9aab5b36
           imagePullPolicy: Always
           envFrom:
             - secretRef:
