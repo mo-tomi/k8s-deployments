@@ -6,6 +6,8 @@ metadata:
     app: bumpkun
 spec:
   replicas: 1
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: bumpkun
@@ -26,7 +28,7 @@ spec:
                       - oracle
       containers:
         - name: bumpkun
-          image: ghcr.io/mo-tomi/bumpkun.v2:edge
+          image: ghcr.io/mo-tomi/bumpkun.v2@sha256:1a23cc73a1b8417987c241933287e1c208f600e3c0db1aaad0516919f0005f51
           imagePullPolicy: Always
           envFrom:
             - secretRef:
